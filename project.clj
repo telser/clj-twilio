@@ -1,4 +1,4 @@
-(defproject light.wily/clj-twilio "0.0.2"
+(defproject light.wily/clj-twilio "0.0.3"
   :description "Clojure wrapper for Twillio"
   :url "http://github.com/telser/clj-twilio"
   :license {:name "Eclipse Public License"
