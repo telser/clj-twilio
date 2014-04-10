@@ -122,10 +122,10 @@
 (t/tc-ignore
  (defn verify-phone
    "Verify a phone number for making calls"
-   [num]
+   [params]
    (assert ((complement every?) str/blank? [*sid* *token*]))
    (let [url (str base "/Accounts/" *sid* "/OutgoingCallerIds.json")
-         params {:PhoneNumber num}]
+         request-params (into {} params)]
      (try
        (http/request
         {:method :post
